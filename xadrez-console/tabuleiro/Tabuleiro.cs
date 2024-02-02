@@ -1,4 +1,5 @@
-﻿using xadrez_console.tabuleiro;
+﻿using System.Reflection.Metadata.Ecma335;
+using xadrez_console.tabuleiro;
 
 namespace tabuleiro
 {
@@ -16,18 +17,19 @@ namespace tabuleiro
             pecas = new Peca[linhas, colunas];
         }
 
-        public Peca p(int linhas, int colunas)
+        public Peca peca(int linhas, int colunas)
         {
             return pecas[linhas, colunas];
         }
+
         public Peca peca(Posicao pos)
         {
             return pecas[pos.Linhas, pos.Colunas];
-        }
+        } 
 
         public bool existePeca(Posicao pos)
         {
-            validaPosicao(pos);
+            validarPosicao(pos);
             return peca(pos) != null;
         }
 
@@ -35,7 +37,7 @@ namespace tabuleiro
         {
             if (existePeca(pos))
             {
-                throw new TabuleiroExceptions("Já existe uma peça nessa posição,tente outra posição por favor!");
+                throw new TabuleiroExceptions("Já existe uma peça nessa posição!");
             }
             pecas[pos.Linhas, pos.Colunas] = p;
             p.posicao = pos;
@@ -50,7 +52,7 @@ namespace tabuleiro
             return true;
         }
 
-        public void validaPosicao(Posicao pos)
+        public void validarPosicao(Posicao pos)
         {
             if (!posicaoValida(pos))
             {

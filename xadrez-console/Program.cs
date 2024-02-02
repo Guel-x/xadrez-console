@@ -16,7 +16,7 @@ namespace Course
 
                 tab.colocarPecas(new Torre(tab, Cor.Preta), new Posicao(0, 0));
                 tab.colocarPecas(new Torre(tab, Cor.Azul), new Posicao(1, 2));
-                tab.colocarPecas(new Rei(tab, Cor.Branca), new Posicao(0, 9));
+                tab.colocarPecas(new Rei(tab, Cor.Branca), new Posicao(0, 2));
 
 
 
