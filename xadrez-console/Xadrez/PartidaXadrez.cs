@@ -35,12 +35,12 @@ namespace Xadrez
             tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('e', 1).toPosicao());
             tab.colocarPecas(new Rei(tab, Cor.Branca), new PosicaoXadrez('d', 1).toPosicao());
             
-            tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 8).toPosicao());
-            tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('c', 7).toPosicao());
-            tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('d', 7).toPosicao());
-            tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('e', 7).toPosicao());
-            tab.colocarPecas(new Torre(tab, Cor.Branca), new PosicaoXadrez('e', 8).toPosicao());
-            tab.colocarPecas(new Rei(tab, Cor.Branca), new PosicaoXadrez('d', 8).toPosicao());
+            tab.colocarPecas(new Torre(tab, Cor.Preta), new PosicaoXadrez('c', 8).toPosicao());
+            tab.colocarPecas(new Torre(tab, Cor.Preta), new PosicaoXadrez('c', 7).toPosicao());
+            tab.colocarPecas(new Torre(tab, Cor.Preta), new PosicaoXadrez('d', 7).toPosicao());
+            tab.colocarPecas(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 7).toPosicao());
+            tab.colocarPecas(new Torre(tab, Cor.Preta), new PosicaoXadrez('e', 8).toPosicao());
+            tab.colocarPecas(new Rei(tab, Cor.Preta), new PosicaoXadrez('d', 8).toPosicao());
 
         }
     }
