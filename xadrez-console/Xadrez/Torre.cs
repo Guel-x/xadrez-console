@@ -52,6 +52,7 @@ namespace Xadrez
             pos.definirValores(posicao.Linhas, posicao.Colunas + 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
+                mat[pos.Linhas, pos.Colunas] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor)
                 {
                     break;
@@ -62,6 +63,7 @@ namespace Xadrez
             pos.definirValores(posicao.Linhas, posicao.Colunas - 1);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
+                mat[pos.Linhas, pos.Colunas] = true;
                 if (tab.peca(pos) != null && tab.peca(pos).cor != cor)
                 {
                     break;
