@@ -19,7 +19,7 @@ namespace Course
                     try
                     {
                         Console.Clear();
-                        Tela.imptrimirPartida(partida);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
@@ -40,7 +40,9 @@ namespace Course
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-                    }
+                }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroExceptions e)
             {
