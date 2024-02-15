@@ -18,11 +18,13 @@ namespace xadrez {
             return p == null || p.cor != cor;
         }
 
+        //Esse metodo verifica se pode fazer o roque!
         private bool testeTorreParaRoque(Posicao pos) {
             Peca p = tab.peca(pos);
             return p != null && p is Torre && p.cor == cor && p.qteMovimentos == 0;
         }
 
+        // Esse metodo mostra as direções que está peça pode mexer!
         public override bool[,] movimentosPossiveis() {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
